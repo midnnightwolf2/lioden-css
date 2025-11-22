@@ -1,0 +1,56 @@
+:root {
+  --mainFont: 'Times New Roman', serif;
+  --textColor: #fff8dc;
+  --borderColor: #ffd700;
+  --overlayColor: rgba(15,15,30,0.75);
+}
+
+/* Global cave background */
+body {
+  font-family: var(--mainFont);
+  background: url('https://i.postimg.cc/2ydHpYv0/bd80b38dafac58c68dfc7255a1b706b8.jpg') fixed center center;
+  background-size: cover;
+  color: var(--textColor);
+  text-shadow: 1px 1px 2px #000;
+}
+
+/* Cave description box */
+.caveDescription, .cave-description, #caveDescription, .caveContainer {
+  background: var(--overlayColor) !important;
+  border: 3px solid var(--borderColor) !important;
+  border-radius: 12px !important;
+  box-shadow: 0 0 15px var(--borderColor) !important;
+  color: var(--textColor) !important;
+  text-shadow: 1px 1px 2px #000 !important;
+  padding: 20px !important;
+}
+
+/* Lion slot boxes */
+.lion, .lionBox, .cave-grid div, .cave-grid .lionName {
+  background: var(--overlayColor) !important;
+  border: 2px solid var(--borderColor) !important;
+  border-radius: 8px !important;
+  box-shadow: 0 0 10px var(--borderColor) !important;
+  color: var(--textColor) !important;
+  text-shadow: 1px 1px 2px #000 !important;
+  padding: 5px !important;
+}
+
+/* Featured lion section */
+.featured-lion {
+  background: url('https://i.postimg.cc/RZJHqRpc/528682af5fe466a6b24d458b72f7fa1e.jpg') center/cover no-repeat;
+  border: 3px solid var(--borderColor);
+  border-radius: 12px;
+  box-shadow: 0 0 15px var(--borderColor);
+  padding: 20px;
+  text-align: center;
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+/* Cave thumbnails */
+.cave-grid img {
+  border: 2px solid var(--borderColor);
+  border-radius: 8px;
+  box-shadow: 0 0 8px var(--borderColor);
+}
