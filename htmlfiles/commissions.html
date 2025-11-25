@@ -1,0 +1,343 @@
+<style>
+/* Commission Shop CSS - Lioden Compatible */
+
+body {
+	background: url('https://i.postimg.cc/4ycT1tfF/6b2e107cba7f2018105e85f8d5335c8e.jpg') center center fixed;
+	background-size: cover;
+}
+
+.table {
+	border-radius: 15px;
+	overflow: hidden;
+	border-collapse: separate;
+	border-spacing: 0;
+	background: rgba(255, 255, 255, 0.98);
+	box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+	border: 3px solid rgba(107, 91, 149, 0.3);
+}
+
+.table .top {
+	background: linear-gradient(135deg, #6b5b95 0%, #d64161 100%);
+	color: white;
+	padding: 18px 15px;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.table .top .xlarge {
+	font-size: 26px;
+	text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+
+.table .top p {
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+	font-weight: 500;
+}
+
+.table .right {
+	background: rgba(255, 255, 255, 0.99);
+	padding: 18px;
+	line-height: 1.7;
+}
+
+.table tr:nth-child(even) .right {
+	background: rgba(250, 250, 250, 0.99);
+}
+
+.inner-table {
+	border-spacing: 0;
+	border-radius: 10px;
+	overflow: hidden;
+	background: rgba(255, 255, 255, 0.98);
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.inner-table.featured-package {
+	border: 3px solid #feb236;
+	box-shadow: 0 4px 15px rgba(254, 178, 54, 0.5);
+}
+
+.inner-table .left {
+	background: rgba(107, 91, 149, 0.18);
+	padding: 12px 15px;
+	font-weight: 700;
+	color: #1a1a1a;
+}
+
+.inner-table .right {
+	background: rgba(255, 255, 255, 0.95);
+	padding: 12px 15px;
+	color: #1a1a1a;
+	font-weight: 500;
+}
+
+.inner-table .center {
+	padding: 12px 15px;
+	color: #1a1a1a;
+	font-weight: 600;
+}
+
+.inner-table tr:nth-child(even) {
+	background: rgba(0, 0, 0, 0.05);
+}
+
+.inner-table tr:hover {
+	background: rgba(107, 91, 149, 0.12);
+}
+
+.pre-scrollable {
+	max-height: 400px;
+	overflow-y: auto;
+	padding: 10px;
+	scrollbar-width: thin;
+	scrollbar-color: #6b5b95 #f0f0f0;
+}
+
+.pre-scrollable::-webkit-scrollbar { width: 8px; }
+.pre-scrollable::-webkit-scrollbar-track { background: #f0f0f0; border-radius: 4px; }
+.pre-scrollable::-webkit-scrollbar-thumb { background: #6b5b95; border-radius: 4px; }
+.pre-scrollable::-webkit-scrollbar-thumb:hover { background: #5a4a84; }
+
+a:link, a:visited {
+	color: #6b5b95;
+	transition: color 0.2s ease;
+}
+
+a:hover {
+	color: #d64161;
+	text-shadow: 0 0 3px rgba(214, 65, 97, 0.3);
+}
+
+hr {
+	border: none;
+	border-top: 3px solid #feb236;
+	margin: 20px 0;
+	box-shadow: 0 1px 2px rgba(254, 178, 54, 0.3);
+}
+
+p {
+	margin: 10px 0;
+	line-height: 1.6;
+	color: #2d2d2d;
+}
+
+strong {
+	color: #1a1a1a;
+	font-weight: 700;
+}
+
+em {
+	color: #555;
+	font-style: italic;
+}
+
+.table .center {
+	text-align: center;
+}
+
+@media (max-width: 768px) {
+	.table { border-radius: 10px; }
+	.table .top .xlarge { font-size: 20px; }
+	.table .top { padding: 15px 10px; }
+	.table .right { padding: 15px 10px; }
+	.inner-table .left, .inner-table .right, .inner-table .center { padding: 10px 8px; font-size: 14px; }
+	.pre-scrollable { max-height: 300px; }
+}
+</style>
+
+<table class="table"><tbody>
+
+<!-- Header -->
+<tr><td class="top center" colspan="4"><div class="xlarge b">✧ Commission Shop ✧</div><p>HTML Layouts • Lore Writing • Trackers • Cave CSS • Den CSS</p></td></tr>
+
+<!-- Order Queue Section -->
+<tr><td class="top center" colspan="4"><div class="xlarge b">📋 Order Queue</div></td></tr>
+<tr class="right"><td class="right center" colspan="4">
+<div class="center" style="background:#88b04b;color:white;padding:10px;border-radius:8px;margin-bottom:15px;"><strong>🟢 STATUS: OPEN - Accepting New Orders!</strong></div>
+<table class="inner-table auto" style="width:100%;"><tbody>
+<tr><td class="left"><strong>Slot 1:</strong></td><td class="right">Available</td><td class="right" style="color:#88b04b;"><em>Open</em></td></tr>
+<tr><td class="left"><strong>Slot 2:</strong></td><td class="right">Available</td><td class="right" style="color:#88b04b;"><em>Open</em></td></tr>
+<tr><td class="left"><strong>Slot 3:</strong></td><td class="right">Available</td><td class="right" style="color:#88b04b;"><em>Open</em></td></tr>
+<tr><td class="left"><strong>Slot 4:</strong></td><td class="right">Available</td><td class="right" style="color:#88b04b;"><em>Open</em></td></tr>
+<tr><td class="left"><strong>Slot 5:</strong></td><td class="right">Available</td><td class="right" style="color:#88b04b;"><em>Open</em></td></tr>
+</tbody></table>
+</td></tr>
+
+<!-- Services Offered -->
+<tr><td class="top center" colspan="4"><div class="xlarge b">🎨 Services Offered</div></td></tr>
+<tr class="right"><td class="right" colspan="4">
+<table class="inner-table auto" style="width:100%;"><tbody>
+<tr><td class="left" style="width:25%;"><strong>💻 HTML Layouts</strong></td><td class="right">Custom bio layouts with unique designs, tables, and formatting. Perfect for showcasing your pride story!</td><td class="right" style="color:#d64161;width:15%;"><strong>From 3 GB</strong></td></tr>
+<tr><td class="left"><strong>🎨 Logo Work</strong></td><td class="right">Custom logos, banners, and graphics for your pride. Includes revisions and multiple file formats.</td><td class="right" style="color:#d64161;"><strong>From 6 GB</strong></td></tr>
+<tr><td class="left"><strong>📖 Lore Writing</strong></td><td class="right">Compelling stories and backstories for your lions. Includes character development and worldbuilding.</td><td class="right" style="color:#d64161;"><strong>From 5 GB</strong></td></tr>
+<tr><td class="left"><strong>📊 Trackers</strong></td><td class="right">Breeding trackers, achievement trackers, and custom tracking systems for your goals.</td><td class="right" style="color:#d64161;"><strong>From 9 GB</strong></td></tr>
+<tr><td class="left"><strong>🏠 Cave CSS</strong></td><td class="right">Custom cave styling with backgrounds, colors, and decorative elements. Make your cave unique!</td><td class="right" style="color:#d64161;"><strong>From 15 GB</strong></td></tr>
+<tr><td class="left"><strong>🦁 Den CSS</strong></td><td class="right">Full den overhaul with custom themes, navigation, and cohesive design throughout.</td><td class="right" style="color:#d64161;"><strong>From 20 GB</strong></td></tr>
+<tr><td class="left"><strong>✨ Small Details</strong></td><td class="right">Minor edits, adjustments, color changes, or additions to existing code. Quick turnaround!</td><td class="right" style="color:#d64161;"><strong>18 GB</strong></td></tr>
+</tbody></table>
+</td></tr>
+
+<!-- Pricing Details -->
+<tr><td class="top center" colspan="4"><div class="xlarge b">💰 Pricing Details</div></td></tr>
+<tr class="right"><td class="right center" colspan="4">
+[spoiler]
+<table class="inner-table auto" style="width:100%;"><tbody>
+<tr style="background:#6b5b95;color:white;"><td class="left"><strong>Service</strong></td><td class="center"><strong>Basic</strong></td><td class="center"><strong>Standard</strong></td><td class="center"><strong>Premium</strong></td></tr>
+<tr><td class="left">HTML Layouts</td><td class="center" style="color:#d64161;"><strong>1 GB</strong></td><td class="center" style="color:#d64161;"><strong>8 GB</strong></td><td class="center" style="color:#d64161;"><strong>18 GB</strong></td></tr>
+<tr><td class="left">Logo Work</td><td class="center" style="color:#d64161;"><strong>5 GB</strong></td><td class="center" style="color:#d64161;"><strong>9 GB</strong></td><td class="center" style="color:#d64161;"><strong>17 GB</strong></td></tr>
+<tr><td class="left">Lore Writing (per 500 words)</td><td class="center" style="color:#d64161;"><strong>2 GB</strong></td><td class="center" style="color:#d64161;"><strong>10 GB</strong></td><td class="center" style="color:#d64161;"><strong>23 GB</strong></td></tr>
+<tr><td class="left">Trackers</td><td class="center" style="color:#d64161;"><strong>5 GB</strong></td><td class="center" style="color:#d64161;"><strong>10 GB</strong></td><td class="center" style="color:#d64161;"><strong>20 GB</strong></td></tr>
+<tr><td class="left">Cave CSS</td><td class="center" style="color:#d64161;"><strong>20 GB</strong></td><td class="center" style="color:#d64161;"><strong>25 GB</strong></td><td class="center" style="color:#d64161;"><strong>40 GB</strong></td></tr>
+<tr><td class="left">Den CSS</td><td class="center" style="color:#d64161;"><strong>19 GB</strong></td><td class="center" style="color:#d64161;"><strong>25 GB</strong></td><td class="center" style="color:#d64161;"><strong>43 GB</strong></td></tr>
+<tr><td class="left">Small Details/Edits</td><td class="center" style="color:#d64161;" colspan="3"><strong>20 GB</strong></td></tr>
+</tbody></table>
+<p><em>* Prices may vary based on complexity. Comment with your request for a custom quote!</em></p>
+[/spoiler]
+</td></tr>
+
+<!-- Packages -->
+<tr><td class="top center" colspan="4"><div class="xlarge b">📦 Packages</div></td></tr>
+<tr class="right"><td class="right" colspan="4">
+[spoiler]
+<div class="pre-scrollable">
+
+<table class="inner-table auto" style="width:100%;margin-bottom:15px;"><tbody>
+<tr style="background:#6b5b95;color:white;"><td class="center" colspan="2"><strong>Basic Bundle - 2 GB</strong></td></tr>
+<tr><td class="left" colspan="2">
+<p>✓ Simple HTML Layout</p>
+<p>✓ Basic Tracker</p>
+<p>✓ 1 Revision Round</p>
+<p>✓ 3-5 Day Delivery</p>
+</td></tr>
+<tr style="background:#f0f0f0;"><td class="center" colspan="2"><em>Total Value: <strong style="color:#d64161;">3 GB</strong> | You Save: <strong style="color:#88b04b;">1 GB</strong></em></td></tr>
+</tbody></table>
+
+<table class="inner-table auto featured-package" style="width:100%;margin-bottom:15px;"><tbody>
+<tr style="background:#feb236;color:white;"><td class="center" colspan="2"><strong>⭐ Standard Bundle - 6 GB ⭐</strong></td></tr>
+<tr><td class="left" colspan="2">
+<p>✓ Custom HTML Layout</p>
+<p>✓ Cave CSS</p>
+<p>✓ Advanced Tracker</p>
+<p>✓ Short Lore (500 words)</p>
+<p>✓ 2 Revision Rounds</p>
+<p>✓ 5-7 Day Delivery</p>
+</td></tr>
+<tr style="background:#f0f0f0;"><td class="center" colspan="2"><em>Total Value: <strong style="color:#d64161;">9 GB</strong> | You Save: <strong style="color:#88b04b;">3 GB</strong></em></td></tr>
+</tbody></table>
+
+<table class="inner-table auto" style="width:100%;margin-bottom:15px;"><tbody>
+<tr style="background:#6b5b95;color:white;"><td class="center" colspan="2"><strong>Premium Bundle - 10 GB</strong></td></tr>
+<tr><td class="left" colspan="2">
+<p>✓ Premium HTML Layout</p>
+<p>✓ Full Den CSS</p>
+<p>✓ Premium Tracker</p>
+<p>✓ Extended Lore (1000 words)</p>
+<p>✓ 3 Revision Rounds</p>
+<p>✓ 7-10 Day Delivery</p>
+</td></tr>
+<tr style="background:#f0f0f0;"><td class="center" colspan="2"><em>Total Value: <strong style="color:#d64161;">15 GB</strong> | You Save: <strong style="color:#88b04b;">5 GB</strong></em></td></tr>
+</tbody></table>
+
+<table class="inner-table auto" style="width:100%;margin-bottom:15px;"><tbody>
+<tr style="background:#d64161;color:white;"><td class="center" colspan="2"><strong>🌟 Ultimate Bundle - 18 GB 🌟</strong></td></tr>
+<tr><td class="left" colspan="2">
+<p>✓ Premium HTML Layout</p>
+<p>✓ Full Den CSS + Cave CSS</p>
+<p>✓ Logo Work</p>
+<p>✓ Premium Tracker System</p>
+<p>✓ Full Lore Package (2000 words)</p>
+<p>✓ Unlimited Revisions</p>
+<p>✓ Priority Support</p>
+<p>✓ 10-14 Day Delivery</p>
+</td></tr>
+<tr style="background:#f0f0f0;"><td class="center" colspan="2"><em>Total Value: <strong style="color:#d64161;">25+ GB</strong> | You Save: <strong style="color:#88b04b;">7+ GB</strong></em></td></tr>
+</tbody></table>
+
+</div>
+[/spoiler]
+</td></tr>
+
+<!-- Accepted Payment -->
+<tr><td class="top center" colspan="4"><div class="xlarge b">🎁 Accepted Payment</div></td></tr>
+<tr class="right"><td class="right" colspan="4">
+[spoiler]
+<table class="inner-table auto" style="width:100%;"><tbody>
+<tr>
+<td class="left" style="width:25%;vertical-align:top;">
+<p><strong>💵 Currency</strong></p>
+<p>• Silver Beetles (SB)</p>
+<p>• Gold Beetles (GB)</p>
+<p>• Event Currency</p>
+</td>
+<td class="left" style="width:25%;vertical-align:top;">
+<p><strong>🦁 Lions</strong></p>
+<p>• High Stat Lions</p>
+<p>• Rare Base/Eye Lions</p>
+<p>• Mutie Lions</p>
+<p>• Marking Lions</p>
+</td>
+<td class="left" style="width:25%;vertical-align:top;">
+<p><strong>🎨 Decor & Apparel</strong></p>
+<p>• Applicators</p>
+<p>• Backgrounds</p>
+<p>• Event Decor</p>
+<p>• Rare Apparel</p>
+</td>
+<td class="left" style="width:25%;vertical-align:top;">
+<p><strong>🧪 Items</strong></p>
+<p>• Breeding Items</p>
+<p>• Karma Items</p>
+<p>• Crafting Materials</p>
+<p>• Event Items</p>
+</td>
+</tr>
+</tbody></table>
+<p class="center"><em>* Item values negotiable. PM me with offers! 1 GB = 1000 SB</em></p>
+[/spoiler]
+</td></tr>
+
+<!-- Terms of Service -->
+<tr><td class="top center" colspan="4"><div class="xlarge b">📜 Terms of Service</div></td></tr>
+<tr class="right"><td class="right" colspan="4">
+[spoiler]
+<p>★ <strong>Upfront payment makes you a priority job!</strong> Get your commission completed faster with full payment.</p>
+<p>★ Partial payment accepted (50% deposit minimum) - remaining due before final delivery</p>
+<p>★ Revisions are included based on your package/tier</p>
+<p>★ Turnaround time varies based on queue and complexity</p>
+<p>★ I reserve the right to decline any commission</p>
+<p>★ Credit must remain intact on all CSS work</p>
+<p>★ Commercial use or reselling is not permitted</p>
+<p>★ Refunds available only if work hasn't started</p>
+<p>★ I may use completed work in my portfolio (unless requested otherwise)</p>
+[/spoiler]
+</td></tr>
+
+<!-- How to Order -->
+<tr><td class="top center" colspan="4"><div class="xlarge b">📬 How to Order</div></td></tr>
+<tr class="right"><td class="right center" colspan="4">
+[spoiler]
+<p><strong>1.</strong> Check if commissions are OPEN (see queue above)</p>
+<p><strong>2.</strong> <strong>COMMENT BELOW</strong> with the following order form filled out:</p>
+<hr />
+<p style="text-align:left;"><strong>📋 ORDER FORM:</strong></p>
+<p style="text-align:left;">
+<strong>Service/Package:</strong> [Which service or bundle?]<br>
+<strong>Type:</strong> [Basic/Standard/Premium tier]<br>
+<strong>Description:</strong> [What do you want? Be detailed!]<br>
+<strong>Theme/Colors:</strong> [Preferred colors, mood, style]<br>
+<strong>References:</strong> [Links to examples you like]<br>
+<strong>Text Content:</strong> [Any specific text, names, or info to include]<br>
+<strong>Special Requests:</strong> [Animations, hover effects, specific fonts, etc.]<br>
+<strong>Payment Method:</strong> [GB/SB/Items - Full or Deposit?]<br>
+<strong>Deadline:</strong> [Any rush needed? Standard turnaround or specific date?]<br>
+<strong>Additional Notes:</strong> [Anything else I should know?]
+</p>
+<hr />
+<p><strong>3.</strong> Wait for my response with a quote and estimated delivery time</p>
+<p><strong>4.</strong> Once approved, send payment to secure your slot</p>
+<p style="margin-top: 20px;"><strong>Questions?</strong> Feel free to comment below or PM me anytime!</p>
+[/spoiler]
+</td></tr>
+
+</tbody></table>
