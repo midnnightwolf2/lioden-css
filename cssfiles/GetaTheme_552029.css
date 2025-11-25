@@ -823,8 +823,101 @@ img[src*="logo"] {
 	animation: goldenGlow 3s ease-in-out infinite;
 }
 
-/* AUTOMATIC IMAGE APPLICATION TO LIODEN ELEMENTS */
-/* These styles automatically apply background images to existing Lioden page elements */
+/* AUTOMATIC IMAGE REPLACEMENT FOR LIODEN ELEMENTS */
+/* These styles replace Lioden's default images with custom theme images */
+
+/* MAIN BACKGROUND - Already applied to body */
+/* Background is set in line 103 - Roman amphitheater scene */
+
+/* REPLACE LIODEN IMAGES WITH CUSTOM IMAGES */
+/* Hide original image and replace with background */
+
+/* Cave/Den Images - Replace with different images for each den */
+.cave-grid img:nth-of-type(1) {
+	content: url('https://i.ibb.co/whGYb70Y/tumblr-c0c84d2edf4ef65bf7ab7ec6d6ff105b-3b8c59f6-400.webp') !important;
+	border: 3px solid rgba(var(--gold), var(--opacity-high));
+	border-radius: 12px;
+	box-shadow: 0 0 15px rgba(var(--gold), 0.6);
+}
+
+.cave-grid img:nth-of-type(2) {
+	content: url('https://i.ibb.co/7JK3K3zg/tumblr-80bf543a59fab434794cbd3d6beb4050-1b91f5f7-400.webp') !important;
+	border: 3px solid rgba(var(--gold), var(--opacity-high));
+	border-radius: 12px;
+	box-shadow: 0 0 15px rgba(var(--gold), 0.6);
+}
+
+.cave-grid img:nth-of-type(3) {
+	content: url('https://i.pinimg.com/736x/46/ea/4d/46ea4db2021a7e3decc98f8a7a63adf3.jpg') !important;
+	border: 3px solid rgba(var(--gold), var(--opacity-high));
+	border-radius: 12px;
+	box-shadow: 0 0 15px rgba(var(--gold), 0.6);
+}
+
+.cave-grid img:nth-of-type(4) {
+	content: url('https://i.pinimg.com/736x/54/ac/5f/54ac5f61eab2824f12f49c9f8b8a3c53.jpg') !important;
+	border: 3px solid rgba(var(--gold), var(--opacity-high));
+	border-radius: 12px;
+	box-shadow: 0 0 15px rgba(var(--gold), 0.6);
+}
+
+/* Unsorted/Cave background - animated GIF */
+.cave-grid img:nth-of-type(5) {
+	content: url('https://i.ibb.co/DDNkp0c0/tumblr-cadb016ab0f74ce7e9da3480925651f0-62e90ed3-400.gif') !important;
+	border: 3px solid rgba(var(--gold), var(--opacity-high));
+	border-radius: 12px;
+	box-shadow: 0 0 15px rgba(var(--gold), 0.6);
+}
+
+/* Additional den images */
+.cave-grid img:nth-of-type(6) {
+	content: url('https://i.pinimg.com/736x/9d/b7/3d/9db73dec4edf4c5d26150216f4bea61c.jpg') !important;
+	border: 3px solid rgba(var(--gold), var(--opacity-high));
+	border-radius: 12px;
+	box-shadow: 0 0 15px rgba(var(--gold), 0.6);
+}
+
+.cave-grid img:nth-of-type(7) {
+	content: url('https://i.pinimg.com/736x/1b/bb/a4/1bbba484d906a2bfda0089a054420ca7.jpg') !important;
+	border: 3px solid rgba(var(--gold), var(--opacity-high));
+	border-radius: 12px;
+	box-shadow: 0 0 15px rgba(var(--gold), 0.6);
+}
+
+.cave-grid img:nth-of-type(8) {
+	content: url('https://i.pinimg.com/1200x/da/81/f0/da81f03c65e31a7372f374aa99d63737.jpg') !important;
+	border: 3px solid rgba(var(--gold), var(--opacity-high));
+	border-radius: 12px;
+	box-shadow: 0 0 15px rgba(var(--gold), 0.6);
+}
+
+.cave-grid img:nth-of-type(9) {
+	content: url('https://i.pinimg.com/1200x/54/93/9f/54939f460dcd12fa1c7069c9d7efb55b.jpg') !important;
+	border: 3px solid rgba(var(--gold), var(--opacity-high));
+	border-radius: 12px;
+	box-shadow: 0 0 15px rgba(var(--gold), 0.6);
+}
+
+.cave-grid img:nth-of-type(10) {
+	content: url('https://i.pinimg.com/1200x/47/43/3b/47433b5856d19bc0fd0bdecb243320cb.jpg') !important;
+	border: 3px solid rgba(var(--gold), var(--opacity-high));
+	border-radius: 12px;
+	box-shadow: 0 0 15px rgba(var(--gold), 0.6);
+}
+
+.cave-grid img:nth-of-type(11) {
+	content: url('https://i.pinimg.com/736x/fd/ac/3b/fdac3be26dbb437e00e71613907678b7.jpg') !important;
+	border: 3px solid rgba(var(--gold), var(--opacity-high));
+	border-radius: 12px;
+	box-shadow: 0 0 15px rgba(var(--gold), 0.6);
+}
+
+.cave-grid img:nth-of-type(12) {
+	content: url('https://i.pinimg.com/736x/f3/d8/5e/f3d85e59ba0eb6e58024cb98d26f3b25.jpg') !important;
+	border: 3px solid rgba(var(--gold), var(--opacity-high));
+	border-radius: 12px;
+	box-shadow: 0 0 15px rgba(var(--gold), 0.6);
+}
 
 /* Achievements Container */
 #fraAchievements, #fraCopyPlaceholder {
@@ -837,44 +930,7 @@ img[src*="logo"] {
 	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5) !important;
 }
 
-/* Apply backgrounds to specific image elements on the page */
-/* These target Lioden's default image containers */
-
-/* Main den/cave images - apply various backgrounds */
-.cave-grid img:nth-child(1),
-img[src*="unsorted"]:first-of-type {
-	background: url('https://i.ibb.co/DDNkp0c0/tumblr-cadb016ab0f74ce7e9da3480925651f0-62e90ed3-400.gif') center center no-repeat;
-	background-size: cover;
-	padding: 5px;
-}
-
-/* Additional image styling for automatic application */
-.container img[alt*="pregnant"],
-.container img[alt*="Pregnant"],
-img[src*="preg"] {
-	border: 3px solid rgba(var(--gold), var(--opacity-high));
-	box-shadow: 0 0 15px rgba(var(--gold), 0.6);
-	border-radius: 12px;
-}
-
-/* Dynasty and pride related images */
-.container img[alt*="dynasty"],
-.container img[alt*="Dynasty"],
-.container img[alt*="lineage"] {
-	border: 3px solid rgba(var(--gold), var(--opacity-high));
-	box-shadow: 0 0 15px rgba(var(--gold), 0.6);
-	border-radius: 12px;
-}
-
-/* Showcase images */
-.container img[alt*="showcase"],
-.container img[alt*="Showcase"] {
-	border: 3px solid rgba(var(--gold), var(--opacity-high));
-	box-shadow: 0 0 15px rgba(var(--gold), 0.6);
-	border-radius: 12px;
-}
-
-/* All container images get themed styling */
+/* All other images get golden borders and themed styling */
 .container.main img {
 	border: 2px solid rgba(var(--gold), 0.6);
 	border-radius: 10px;
