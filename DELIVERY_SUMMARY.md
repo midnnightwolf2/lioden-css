@@ -18,7 +18,7 @@ Located: `cssfiles/GetaTheme_552029.css`
 - Responsive design for mobile
 - Gothic pixel aesthetic effects
 
-### 2. **GetaTheme_552029_html.txt** (390 lines)
+### 2. **GetaTheme_552029_html.txt** (284 lines)
 Located: `htmlfiles/GetaTheme_552029_html.txt`
 
 **HTML template file** with ready-to-use code snippets for all den sections.
@@ -179,7 +179,7 @@ Located: `GetaTheme_552029_Preview.html`
 ## 📊 Technical Details
 
 - **Total Lines of CSS:** 735
-- **Total Lines of HTML:** 390
+- **Total Lines of HTML:** 284
 - **Font Imports:** 4 Google Fonts
 - **Color Variables:** 4 main + 3 opacity levels
 - **CSS Classes:** 40+ custom classes
