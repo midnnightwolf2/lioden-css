@@ -38,12 +38,12 @@
 
 /* Content rows */
 .table .right {
-	background: rgba(255, 255, 255, 0.95);
+	background: #ffffff;
 	padding: 15px;
 }
 
 .table tr:nth-child(even) .right {
-	background: rgba(248, 248, 248, 0.95);
+	background: #f8f8f8;
 }
 
 /* Inner table styling */
@@ -51,6 +51,12 @@
 	border-spacing: 0;
 	border-radius: 8px;
 	overflow: hidden;
+}
+
+/* Featured package styling */
+.inner-table.featured-package {
+	border: 2px solid #feb236;
+	box-shadow: 0 2px 8px rgba(254, 178, 54, 0.3);
 }
 
 .inner-table .left {
