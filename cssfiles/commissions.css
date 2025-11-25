@@ -1,0 +1,151 @@
+/*
+	Commission Shop CSS
+	Lioden Compatible Stylesheet
+	
+	-------------------------------------------------------
+	
+	* This code works with Lioden's table-based HTML system
+	* Uses Lioden's built-in classes: table, inner-table, top, center, right, left, xlarge, b, pre-scrollable
+	* Safe inline styles for colors and basic formatting
+	
+	-------------------------------------------------------
+*/
+
+/* Hide message for users without CSS */
+.hiding {
+	display: none;
+}
+
+/* Main table styling enhancements */
+.table {
+	border-radius: 12px;
+	overflow: hidden;
+	border-collapse: separate;
+	border-spacing: 0;
+}
+
+/* Header row styling */
+.table .top {
+	background: linear-gradient(135deg, #6b5b95 0%, #d64161 100%);
+	color: white;
+	padding: 15px;
+}
+
+.table .top .xlarge {
+	font-size: 24px;
+	text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+
+/* Content rows */
+.table .right {
+	background: rgba(255, 255, 255, 0.95);
+	padding: 15px;
+}
+
+.table tr:nth-child(even) .right {
+	background: rgba(248, 248, 248, 0.95);
+}
+
+/* Inner table styling */
+.inner-table {
+	border-spacing: 0;
+	border-radius: 8px;
+	overflow: hidden;
+}
+
+.inner-table .left {
+	background: rgba(107, 91, 149, 0.1);
+	padding: 10px 15px;
+	font-weight: 500;
+}
+
+.inner-table .right {
+	background: none;
+	padding: 10px 15px;
+}
+
+.inner-table tr:nth-child(even) {
+	background: rgba(0, 0, 0, 0.03);
+}
+
+.inner-table tr:hover {
+	background: rgba(107, 91, 149, 0.08);
+}
+
+/* Scrollable sections */
+.pre-scrollable {
+	max-height: 400px;
+	overflow-y: auto;
+	padding: 10px;
+	scrollbar-width: thin;
+	scrollbar-color: #6b5b95 #f0f0f0;
+}
+
+.pre-scrollable::-webkit-scrollbar {
+	width: 8px;
+}
+
+.pre-scrollable::-webkit-scrollbar-track {
+	background: #f0f0f0;
+	border-radius: 4px;
+}
+
+.pre-scrollable::-webkit-scrollbar-thumb {
+	background: #6b5b95;
+	border-radius: 4px;
+}
+
+.pre-scrollable::-webkit-scrollbar-thumb:hover {
+	background: #5a4a84;
+}
+
+/* Link styling */
+a:link, a:visited {
+	color: #6b5b95;
+	transition: color 0.2s ease;
+}
+
+a:hover {
+	color: #d64161;
+	text-shadow: 0 0 3px rgba(214, 65, 97, 0.3);
+}
+
+/* Horizontal rule styling */
+hr {
+	border: none;
+	border-top: 2px solid #feb236;
+	margin: 15px 0;
+}
+
+/* Paragraph spacing */
+p {
+	margin: 8px 0;
+	line-height: 1.5;
+}
+
+/* Strong/bold text */
+strong {
+	color: #333;
+}
+
+/* Emphasis text */
+em {
+	color: #666;
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 768px) {
+	.table .top .xlarge {
+		font-size: 18px;
+	}
+	
+	.inner-table .left,
+	.inner-table .right {
+		padding: 8px 10px;
+		font-size: 14px;
+	}
+	
+	.pre-scrollable {
+		max-height: 300px;
+	}
+}
