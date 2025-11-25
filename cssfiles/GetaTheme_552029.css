@@ -823,4 +823,67 @@ img[src*="logo"] {
 	animation: goldenGlow 3s ease-in-out infinite;
 }
 
+/* AUTOMATIC IMAGE APPLICATION TO LIODEN ELEMENTS */
+/* These styles automatically apply background images to existing Lioden page elements */
+
+/* Achievements Container */
+#fraAchievements, #fraCopyPlaceholder {
+	background: url('https://i.pinimg.com/736x/fd/ac/3b/fdac3be26dbb437e00e71613907678b7.jpg') center center no-repeat !important;
+	background-size: cover !important;
+	border: 3px solid rgba(var(--gold), var(--opacity-high)) !important;
+	border-radius: 15px !important;
+	padding: 20px !important;
+	margin: 15px 0 !important;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5) !important;
+}
+
+/* Apply backgrounds to specific image elements on the page */
+/* These target Lioden's default image containers */
+
+/* Main den/cave images - apply various backgrounds */
+.cave-grid img:nth-child(1),
+img[src*="unsorted"]:first-of-type {
+	background: url('https://i.ibb.co/DDNkp0c0/tumblr-cadb016ab0f74ce7e9da3480925651f0-62e90ed3-400.gif') center center no-repeat;
+	background-size: cover;
+	padding: 5px;
+}
+
+/* Additional image styling for automatic application */
+.container img[alt*="pregnant"],
+.container img[alt*="Pregnant"],
+img[src*="preg"] {
+	border: 3px solid rgba(var(--gold), var(--opacity-high));
+	box-shadow: 0 0 15px rgba(var(--gold), 0.6);
+	border-radius: 12px;
+}
+
+/* Dynasty and pride related images */
+.container img[alt*="dynasty"],
+.container img[alt*="Dynasty"],
+.container img[alt*="lineage"] {
+	border: 3px solid rgba(var(--gold), var(--opacity-high));
+	box-shadow: 0 0 15px rgba(var(--gold), 0.6);
+	border-radius: 12px;
+}
+
+/* Showcase images */
+.container img[alt*="showcase"],
+.container img[alt*="Showcase"] {
+	border: 3px solid rgba(var(--gold), var(--opacity-high));
+	box-shadow: 0 0 15px rgba(var(--gold), 0.6);
+	border-radius: 12px;
+}
+
+/* All container images get themed styling */
+.container.main img {
+	border: 2px solid rgba(var(--gold), 0.6);
+	border-radius: 10px;
+	transition: all 0.3s ease;
+}
+
+.container.main img:hover {
+	box-shadow: 0 0 20px rgba(var(--gold), 0.9);
+	transform: scale(1.02);
+}
+
 /* END OF CSS */
