@@ -1,0 +1,284 @@
+<!-- 
+	HTML Template for Geta Theme (alexisntfound #552029)
+	CSS by pluto (#52831 / #58766)
+	
+	This file contains HTML examples for using the custom CSS classes.
+	Copy and paste these sections into your Lioden den as needed.
+-->
+
+<!-- ============================ -->
+<!-- MAIN HEADER WITH DECORATION -->
+<!-- ============================ -->
+<!-- This goes at the very top of your den -->
+<div style="text-align: center; padding: 20px;">
+	<h1>alexisntfound's Den</h1>
+	<p style="font-family: 'Cinzel', serif; color: #FFD700; font-size: 18px;">
+		⚔️ Ave Caesar! Welcome to the Empire ⚔️
+	</p>
+</div>
+
+<div class="roman-divider"></div>
+
+<!-- ============================ -->
+<!-- PRIDE OVERVIEW SECTION -->
+<!-- ============================ -->
+<div class="pride-overview">
+	<h2 style="text-align: center;">Pride Overview</h2>
+	<div style="background: rgba(178, 34, 34, 0.6); padding: 15px; border-radius: 12px;">
+		<p>Welcome to my pride! Inspired by the grandeur of Rome and the character of Geta from Gladiator 2.</p>
+		<p>Here you'll find information about my lions, achievements, and dynasty.</p>
+	</div>
+</div>
+
+<!-- ============================ -->
+<!-- PREGNANT LIONESSES SECTION -->
+<!-- ============================ -->
+<div class="pregnant-lionesses">
+	<h2 style="text-align: center;">Expecting Mothers</h2>
+	<div style="background: rgba(178, 34, 34, 0.6); padding: 15px; border-radius: 12px;">
+		<p>Current pregnant lionesses and their expected due dates:</p>
+		<!-- Add your lioness information here -->
+	</div>
+</div>
+
+<!-- ============================ -->
+<!-- BASIC BOX EXAMPLE -->
+<!-- ============================ -->
+<div class="basic-box">
+	<h3>About This Pride</h3>
+	<p>This is a basic box you can use for any content. It features the gothic pixel style with rounded corners and the Roman Empire color scheme.</p>
+	<p>Add any text, images, or links you want here!</p>
+</div>
+
+<!-- ============================ -->
+<!-- OTHER DENS SECTION -->
+<!-- ============================ -->
+<div class="other-dens">
+	<h2 style="text-align: center;">Other Dens & Branches</h2>
+	
+	<!-- Each image in its own container -->
+	<div class="other-dens-image-1" style="padding: 20px;">
+		<div style="background: rgba(178, 34, 34, 0.7); padding: 10px; border-radius: 10px; text-align: center;">
+			<h3>Branch Den 1</h3>
+			<a href="#">Visit Den</a>
+		</div>
+	</div>
+	
+	<div class="other-dens-image-2" style="padding: 20px;">
+		<div style="background: rgba(178, 34, 34, 0.7); padding: 10px; border-radius: 10px; text-align: center;">
+			<h3>Branch Den 2</h3>
+			<a href="#">Visit Den</a>
+		</div>
+	</div>
+	
+	<div class="other-dens-image-3" style="padding: 20px;">
+		<div style="background: rgba(178, 34, 34, 0.7); padding: 10px; border-radius: 10px; text-align: center;">
+			<h3>Branch Den 3</h3>
+			<a href="#">Visit Den</a>
+		</div>
+	</div>
+	
+	<div class="other-dens-image-4" style="padding: 20px;">
+		<div style="background: rgba(178, 34, 34, 0.7); padding: 10px; border-radius: 10px; text-align: center;">
+			<h3>Branch Den 4</h3>
+			<a href="#">Visit Den</a>
+		</div>
+	</div>
+</div>
+
+<!-- ============================ -->
+<!-- DYNASTY LISTS -->
+<!-- ============================ -->
+
+<!-- General Dynasty List -->
+<div class="dynasty-list">
+	<h2 style="text-align: center;">Dynasty Legacy</h2>
+	<div style="background: rgba(178, 34, 34, 0.6); padding: 15px; border-radius: 12px;">
+		<p>The legacy of our pride through the ages...</p>
+	</div>
+</div>
+
+<!-- Queen Dynasty -->
+<div class="queen-dynasty">
+	<h2 style="text-align: center;">👑 Queen Dynasty 👑</h2>
+	<div style="background: rgba(178, 34, 34, 0.6); padding: 15px; border-radius: 12px;">
+		<ul style="list-style: none; padding: 0;">
+			<li>🦁 <strong>Queen Name 1</strong> - Reign: [dates]</li>
+			<li>🦁 <strong>Queen Name 2</strong> - Reign: [dates]</li>
+			<li>🦁 <strong>Queen Name 3</strong> - Reign: [dates]</li>
+			<!-- Add more queens as needed -->
+		</ul>
+	</div>
+</div>
+
+<!-- Pride Dynasty -->
+<div class="pride-dynasty">
+	<h2 style="text-align: center;">⚔️ Pride Dynasty ⚔️</h2>
+	<div style="background: rgba(178, 34, 34, 0.6); padding: 15px; border-radius: 12px;">
+		<ul style="list-style: none; padding: 0;">
+			<li>🦁 <strong>King Name 1</strong> - Reign: [dates]</li>
+			<li>🦁 <strong>King Name 2</strong> - Reign: [dates]</li>
+			<li>🦁 <strong>King Name 3</strong> - Reign: [dates]</li>
+			<!-- Add more kings as needed -->
+		</ul>
+	</div>
+</div>
+
+<!-- ============================ -->
+<!-- ACHIEVEMENTS SECTION -->
+<!-- ============================ -->
+<div class="achievements">
+	<div class="image-header">
+		🏆 Achievements 🏆
+	</div>
+	<div style="background: rgba(178, 34, 34, 0.6); padding: 20px; border-radius: 0 0 12px 12px;">
+		<p><strong>Achievement 1:</strong> Description</p>
+		<p><strong>Achievement 2:</strong> Description</p>
+		<p><strong>Achievement 3:</strong> Description</p>
+		<!-- Add more achievements -->
+	</div>
+</div>
+
+<!-- ============================ -->
+<!-- SHOWCASE SECTION -->
+<!-- ============================ -->
+<div class="showcase">
+	<div class="image-header">
+		✨ Showcase ✨
+	</div>
+	<div style="background: rgba(178, 34, 34, 0.6); padding: 20px; border-radius: 0 0 12px 12px;">
+		<p>Featured lions, special items, or anything you want to show off!</p>
+		<!-- Add images or links to lions -->
+	</div>
+</div>
+
+<!-- ============================ -->
+<!-- BEETLE BOOK SECTION -->
+<!-- ============================ -->
+<div class="beetle-book">
+	<div class="image-header">
+		🪲 Beetle Collection 🪲
+	</div>
+	<div style="background: rgba(178, 34, 34, 0.6); padding: 20px; border-radius: 0 0 12px 12px;">
+		<p>My beetle collection progress and rare finds!</p>
+		<!-- Add beetle information -->
+	</div>
+</div>
+
+<!-- ============================ -->
+<!-- MOUND SECTION -->
+<!-- ============================ -->
+<div class="mound-section">
+	<h2 style="text-align: center;">🏛️ The Mound 🏛️</h2>
+	<div style="background: rgba(178, 34, 34, 0.6); padding: 15px; border-radius: 12px;">
+		<p>Information about the mound and its contents.</p>
+	</div>
+</div>
+
+<!-- ============================ -->
+<!-- LIONESS CAVE -->
+<!-- ============================ -->
+<div class="lioness-cave">
+	<h2 style="text-align: center;">Lioness Territory</h2>
+	<div style="background: rgba(178, 34, 34, 0.6); padding: 15px; border-radius: 12px;">
+		<p>Welcome to the lioness cave! This area uses the animated background.</p>
+		<!-- Add lioness information -->
+	</div>
+</div>
+
+<!-- ============================ -->
+<!-- FANCY COMMENT BOX -->
+<!-- ============================ -->
+<div class="comment-box">
+	<h3 style="text-align: center; color: #FFD700;">Leave a Message</h3>
+	<p style="text-align: center; margin-bottom: 15px;">
+		Share your thoughts or sign my guestbook!
+	</p>
+	<textarea placeholder="Write your comment here..."></textarea>
+	<div style="text-align: center; margin-top: 15px;">
+		<button>Submit Comment</button>
+	</div>
+</div>
+
+<!-- ============================ -->
+<!-- ALATUS BOX -->
+<!-- ============================ -->
+<div class="alatus-box">
+	<h2>Special Announcement</h2>
+	<p style="text-align: center; font-size: 18px; line-height: 1.6;">
+		This is the Alatus box, perfect for important announcements, 
+		special events, or featured content. The dramatic background 
+		and golden accents make it stand out!
+	</p>
+	<div style="text-align: center; margin-top: 20px;">
+		<button class="animated-glow">Learn More</button>
+	</div>
+</div>
+
+<!-- ============================ -->
+<!-- DECORATIVE DIVIDER -->
+<!-- ============================ -->
+<div class="roman-divider"></div>
+
+<!-- ============================ -->
+<!-- ADDITIONAL STYLED CONTENT -->
+<!-- ============================ -->
+
+<!-- Pixel Border Example -->
+<div class="basic-box pixel-border">
+	<h3>Pixel Border Style</h3>
+	<p>This box uses the pixel-border class for extra gothic pixel aesthetic.</p>
+</div>
+
+<!-- Glowing Box Example -->
+<div class="basic-box glow-gold">
+	<h3>Glowing Effect</h3>
+	<p>This box has a golden glow effect to make it stand out!</p>
+</div>
+
+<!-- Animated Glow Example -->
+<div class="basic-box animated-glow">
+	<h3>Animated Glow</h3>
+	<p>This box has an animated pulsing glow effect!</p>
+</div>
+
+<!-- ============================ -->
+<!-- FOOTER WITH CREDITS -->
+<!-- ============================ -->
+<div class="roman-divider"></div>
+
+<div style="text-align: center; padding: 20px; font-size: 14px; color: rgba(255, 215, 0, 0.8);">
+	<p>⚔️ Den CSS by pluto (#52831 / #58766) ⚔️</p>
+	<p>Theme: Gladiator 2 / Geta / Roman Empire / Gothic Pixel</p>
+	<p style="font-size: 12px; color: rgba(245, 245, 245, 0.6);">
+		Commission for alexisntfound (#552029)
+	</p>
+</div>
+
+<!-- ============================ -->
+<!-- USAGE NOTES -->
+<!-- ============================ -->
+<!-- 
+QUICK REFERENCE:
+- Use .basic-box for general content boxes
+- Use .pride-overview for pride information
+- Use .pregnant-lionesses for expecting mothers
+- Use .achievements, .showcase, .beetle-book for specific sections
+- Use .comment-box for a fancy comment/guestbook area
+- Use .alatus-box for special announcements
+- Use .queen-dynasty and .pride-dynasty for lineage
+- Use .other-dens for branch den links
+- Use .lioness-cave for lioness-specific areas
+- Use .roman-divider for decorative section breaks
+- Add .pixel-border for extra pixel aesthetic
+- Add .glow-gold for golden glow effect
+- Add .animated-glow for pulsing animation
+
+COLOR CODES:
+#F5F5F5 - Off-white/Whitesmoke (text)
+#FFD700 - Gold (accents, borders)
+#B22222 - Firebrick Red (backgrounds)
+#B8860B - Dark Goldenrod (secondary accents)
+
+Remember to paste the CSS into your den's CSS section first!
+-->

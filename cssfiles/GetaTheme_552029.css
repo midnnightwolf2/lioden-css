@@ -1,0 +1,735 @@
+/*
+	CSS by pluto (#52831). Commissioned for alexisntfound (552029).
+	Theme: Gladiator 2 / Geta / Roman Empire / Gothic Pixel
+
+	-------------------------------------------------------
+
+	* This code was made for personal use ONLY. Only the commissioner or those that the commissioner allows may use it on their dens.
+	* The commissioner is allowed to edit my code, as long as they leave the credit intact.
+	* Anyone other than me or the commissioner is NOT allowed to edit and reuse this code elsewhere for personal use.
+	* Any unauthorized commercial use of this code will result in a mod report without warning.
+	* Anyone is allowed to reference my code in the making of their own.
+
+	-------------------------------------------------------
+
+	This code was created for a Gothic Pixel aesthetic inspired by Gladiator 2 and the Roman Empire.
+*/
+
+/* SETUP: FONTS & COLORS */
+
+/* Gothic/Roman Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap');
+
+/* Color Variables */
+:root {
+	--whitesmoke: 245, 245, 245; /* #F5F5F5 */
+	--gold: 255, 215, 0; /* #FFD700 */
+	--firebrick: 178, 34, 34; /* #B22222 */
+	--darkgold: 184, 134, 11; /* #B8860B */
+	
+	/* Transparency levels */
+	--opacity-high: 0.95;
+	--opacity-med: 0.75;
+	--opacity-low: 0.5;
+	
+	/* Main fonts */
+	--main-font: 'Cinzel', serif;
+	--decorative-font: 'Cinzel Decorative', cursive;
+	--gothic-font: 'UnifrakturMaguntia', cursive;
+	--header-font: 'IM Fell English SC', serif;
+}
+
+/* CURSOR */
+
+body:hover {
+	cursor: url(https://cur.cursors-4u.net/cursors/cur-11/cur1054.cur), default !important;
+}
+
+a:hover, select:hover, button:hover, input:hover {
+	cursor: url(https://cur.cursors-4u.net/cursors/cur-11/cur1052.cur), pointer !important;
+}
+
+div.slider.round:hover {
+	cursor: url(https://cur.cursors-4u.net/cursors/cur-11/cur1052.cur), pointer !important;
+}
+
+input[type="text"]:hover, input[type="password"]:hover, textarea:hover {
+	cursor: url(https://cur.cursors-4u.net/cursors/cur-11/cur1051.cur), text !important;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	cursor: url(https://cur.cursors-4u.net/cursors/cur-11/cur1052.cur), pointer !important;
+}
+
+/* SCROLLBAR */
+
+/* Chrome/Safari */
+::-webkit-scrollbar {
+	width: 12px;
+}
+
+::-webkit-scrollbar-track {
+	background: rgba(var(--firebrick), 0.2);
+	border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+	background: rgba(var(--gold), var(--opacity-med));
+	border-radius: 10px;
+	border: 2px solid rgba(var(--firebrick), 0.3);
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: rgba(var(--gold), var(--opacity-high));
+}
+
+/* Firefox */
+:root {
+	scrollbar-color: rgba(var(--gold), var(--opacity-med)) rgba(var(--firebrick), 0.2) !important;
+	scrollbar-width: thin !important;
+}
+
+div#chatMessageContainer {
+	scrollbar-color: rgba(var(--gold), var(--opacity-med)) rgba(var(--firebrick), 0.2) !important;
+	scrollbar-width: thin !important;
+}
+
+/* BASICS */
+
+body {
+	background: url('https://i.pinimg.com/736x/bd/80/b3/bd80b38dafac58c68dfc7255a1b706b8.jpg') center center fixed no-repeat;
+	background-size: cover;
+	font-family: var(--main-font);
+	color: rgba(var(--whitesmoke));
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+/* General Links */
+a:link, a:visited {
+	color: rgba(var(--gold));
+	transition: color 0.3s ease;
+	text-decoration: none;
+}
+
+a:hover, a:focus, a:active {
+	color: rgba(var(--whitesmoke));
+	text-shadow: 0 0 8px rgba(var(--gold), 0.8);
+}
+
+/* Headers */
+h1 {
+	text-align: center;
+	font-family: var(--decorative-font);
+	text-transform: uppercase;
+	color: rgba(var(--gold));
+	font-size: 72px;
+	text-shadow: 3px 3px 6px rgba(var(--firebrick), 0.8),
+	             0 0 20px rgba(var(--gold), 0.5);
+	letter-spacing: 3px;
+}
+
+h2 {
+	font-family: var(--header-font);
+	color: rgba(var(--gold));
+	font-size: 36px;
+	text-transform: uppercase;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+h3, .sidebar h3 {
+	font-family: var(--header-font);
+	color: rgba(var(--whitesmoke));
+	font-size: 24px;
+	text-transform: uppercase;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+/* Credits */
+.topbar .welcomeback::after {
+	content: "▶ CSS by pluto [#52831 / #58766] for alexisntfound [#552029]";
+	font-size: 10px;
+	padding-left: 7px;
+	color: rgba(var(--whitesmoke), 0.7);
+}
+
+/* BARS */
+
+/* Topbar */
+.topbar {
+	background: rgba(var(--firebrick), var(--opacity-med));
+	border: 2px solid rgba(var(--gold), var(--opacity-high));
+	border-top: none !important;
+	border-radius: 0 0 15px 15px;
+	color: rgba(var(--whitesmoke));
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5),
+	            inset 0 0 20px rgba(var(--gold), 0.2);
+}
+
+.topbar a:link, .topbar a:visited {
+	color: rgba(var(--gold));
+	transition: color 0.3s ease;
+}
+
+.topbar a:hover, .topbar a:focus, .topbar a:active {
+	color: rgba(var(--whitesmoke));
+	text-shadow: 0 0 8px rgba(var(--gold), 0.8);
+}
+
+.welcomeback a:link, .welcomeback a:visited {
+	color: rgba(var(--whitesmoke));
+}
+
+.welcomeback a:hover, .welcomeback a:focus, .welcomeback a:active {
+	color: rgba(var(--gold));
+}
+
+/* Breadcrumb */
+.breadcrumb {
+	background: rgba(var(--darkgold), var(--opacity-med));
+	color: rgba(var(--whitesmoke));
+	border: 2px solid rgba(var(--gold), 0.5);
+	border-radius: 15px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.breadcrumb > .active {
+	color: rgba(var(--gold));
+}
+
+/* Navbar */
+.navbar {
+	background: rgba(var(--firebrick), var(--opacity-high));
+	border: 2px solid rgba(var(--gold), var(--opacity-high));
+	border-radius: 15px;
+	overflow: visible;
+	color: rgba(var(--whitesmoke));
+	text-transform: uppercase;
+	margin: auto;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5),
+	            inset 0 0 20px rgba(var(--gold), 0.1);
+}
+
+.navbar li a {
+	color: rgba(var(--gold)) !important;
+	font-family: var(--header-font);
+	transition: all 0.3s ease;
+	margin: auto;
+	font-weight: bold;
+}
+
+.navbar li a:hover {
+	background: rgba(var(--darkgold), 0.4) !important;
+	color: rgba(var(--whitesmoke)) !important;
+	text-shadow: 0 0 10px rgba(var(--gold), 0.9);
+}
+
+/* Progress Bar */
+.progress {
+	color: rgba(var(--firebrick));
+	background-color: rgba(var(--darkgold), 0.3);
+	border: 1px solid rgba(var(--gold), 0.5);
+	border-radius: 10px;
+}
+
+.progress-bar {
+	background: linear-gradient(90deg, rgba(var(--gold)), rgba(var(--darkgold)));
+	border-radius: 10px;
+}
+
+th .progress {
+	color: rgba(var(--firebrick));
+	background: rgba(var(--darkgold), 0.2);
+}
+
+th .progress-bar {
+	background: rgba(var(--gold), var(--opacity-high));
+}
+
+/* MAIN COLUMN */
+
+.col-md-9 {
+	background: none;
+}
+
+div.container.main {
+	background: rgba(var(--firebrick), 0.3);
+	box-shadow: 0 0 30px rgba(0, 0, 0, 0.7),
+	            inset 0 0 40px rgba(var(--gold), 0.15);
+	border: 3px solid rgba(var(--gold), var(--opacity-med)) !important;
+	border-radius: 20px;
+	opacity: var(--opacity-high);
+}
+
+/* TABLES */
+
+/* Background/Border */
+.table {
+	border: 2px solid rgba(var(--gold), var(--opacity-high));
+	background: rgba(var(--firebrick), 0.4);
+	border-collapse: separate;
+	border-radius: 15px;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.table#allies .left, .table#clans .left {
+	background: transparent;
+}
+
+/* Headers/Footers */
+th, .top {
+	background: rgba(var(--darkgold), var(--opacity-high)) !important;
+	text-align: center;
+	font-size: 18px;
+	font-family: var(--header-font);
+	color: rgba(var(--whitesmoke));
+	text-transform: uppercase;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+	border-radius: 12px 12px 0 0;
+}
+
+.bottom {
+	background: rgba(var(--darkgold), 0.6) !important;
+	text-align: center;
+	border-radius: 0 0 12px 12px;
+}
+
+/* Table Cells */
+td {
+	background: rgba(var(--firebrick), 0.3);
+	border: 1px solid rgba(var(--gold), 0.3);
+	color: rgba(var(--whitesmoke));
+}
+
+td:hover {
+	background: rgba(var(--firebrick), 0.5);
+}
+
+/* SIDEBAR */
+
+.sidebar {
+	background: rgba(var(--firebrick), var(--opacity-med));
+	border: 2px solid rgba(var(--gold), var(--opacity-high));
+	border-radius: 15px;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.sidebar .feature {
+	background: rgba(var(--darkgold), 0.4);
+	border: 2px solid rgba(var(--gold), 0.5);
+	border-radius: 12px;
+	padding: 15px;
+	margin: 10px 0;
+}
+
+/* PANELS */
+
+.panel {
+	background: rgba(var(--firebrick), 0.4);
+	border: 2px solid rgba(var(--gold), var(--opacity-high));
+	border-radius: 15px;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.panel-default > .panel-heading {
+	background: rgba(var(--darkgold), var(--opacity-high));
+	color: rgba(var(--whitesmoke));
+	border: none;
+	border-radius: 12px 12px 0 0;
+	font-family: var(--header-font);
+	text-transform: uppercase;
+}
+
+.panel-body {
+	background: rgba(var(--firebrick), 0.3);
+	color: rgba(var(--whitesmoke));
+	border-radius: 0 0 12px 12px;
+}
+
+/* BUTTONS */
+
+button, .button, input[type="submit"], input[type="button"] {
+	background: rgba(var(--gold), var(--opacity-high));
+	border: 2px solid rgba(var(--darkgold));
+	border-radius: 10px;
+	color: rgba(var(--firebrick));
+	font-family: var(--header-font);
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 8px 16px;
+	transition: all 0.3s ease;
+	box-shadow: 0 3px 8px rgba(0, 0, 0, 0.4);
+}
+
+button:hover, .button:hover, input[type="submit"]:hover, input[type="button"]:hover {
+	background: rgba(var(--darkgold), var(--opacity-high));
+	color: rgba(var(--whitesmoke));
+	box-shadow: 0 0 15px rgba(var(--gold), 0.8);
+	transform: translateY(-2px);
+}
+
+/* INPUT FIELDS */
+
+input[type="text"], input[type="password"], textarea, select {
+	background: rgba(var(--darkgold), 0.3);
+	border: 2px solid rgba(var(--gold), 0.5);
+	border-radius: 8px;
+	color: rgba(var(--whitesmoke));
+	padding: 8px;
+	font-family: var(--main-font);
+}
+
+input[type="text"]:focus, input[type="password"]:focus, textarea:focus, select:focus {
+	background: rgba(var(--darkgold), 0.5);
+	border-color: rgba(var(--gold), var(--opacity-high));
+	box-shadow: 0 0 10px rgba(var(--gold), 0.5);
+	outline: none;
+}
+
+/* MAIN HEADER DECORATION */
+/* Goes behind "XXX's Den" */
+div.container.main > div:first-child {
+	background: url('https://i.ibb.co/PsVdNKbH/tumblr-aae20ccff7c47a942954bac451cfbbf5-c9a936be-400.webp') center center no-repeat;
+	background-size: cover;
+	padding: 40px 20px;
+	border-radius: 15px 15px 0 0;
+	border-bottom: 3px solid rgba(var(--gold), var(--opacity-high));
+}
+
+/* LIODEN LOGO REPLACEMENT */
+/* Custom logo area */
+img[src*="logo"] {
+	content: url('https://via.placeholder.com/300x100/B22222/FFD700?text=ROMAN+EMPIRE');
+	max-width: 300px;
+	filter: drop-shadow(0 0 10px rgba(var(--gold), 0.8));
+}
+
+/* IMAGE SECTIONS */
+
+/* Pregnant Lionesses Section */
+.pregnant-lionesses {
+	background: url('https://i.pinimg.com/736x/9d/b7/3d/9db73dec4edf4c5d26150216f4bea61c.jpg') center center no-repeat;
+	background-size: cover;
+	border: 3px solid rgba(var(--gold), var(--opacity-high));
+	border-radius: 15px;
+	padding: 20px;
+	margin: 15px 0;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+/* Pride Overview Section */
+.pride-overview {
+	background: url('https://i.pinimg.com/736x/1b/bb/a4/1bbba484d906a2bfda0089a054420ca7.jpg') center center no-repeat;
+	background-size: cover;
+	border: 3px solid rgba(var(--gold), var(--opacity-high));
+	border-radius: 15px;
+	padding: 20px;
+	margin: 15px 0;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+/* Other Dens Section */
+.other-dens {
+	background: rgba(var(--firebrick), 0.5);
+	border: 3px solid rgba(var(--gold), var(--opacity-high));
+	border-radius: 15px;
+	padding: 20px;
+	margin: 15px 0;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.other-dens-image-1 {
+	background: url('https://i.ibb.co/whGYb70Y/tumblr-c0c84d2edf4ef65bf7ab7ec6d6ff105b-3b8c59f6-400.webp') center center no-repeat;
+	background-size: cover;
+	min-height: 200px;
+	border-radius: 12px;
+	margin: 10px 0;
+}
+
+.other-dens-image-2 {
+	background: url('https://i.ibb.co/7JK3K3zg/tumblr-80bf543a59fab434794cbd3d6beb4050-1b91f5f7-400.webp') center center no-repeat;
+	background-size: cover;
+	min-height: 200px;
+	border-radius: 12px;
+	margin: 10px 0;
+}
+
+.other-dens-image-3 {
+	background: url('https://i.pinimg.com/736x/46/ea/4d/46ea4db2021a7e3decc98f8a7a63adf3.jpg') center center no-repeat;
+	background-size: cover;
+	min-height: 200px;
+	border-radius: 12px;
+	margin: 10px 0;
+}
+
+.other-dens-image-4 {
+	background: url('https://i.pinimg.com/736x/54/ac/5f/54ac5f61eab2824f12f49c9f8b8a3c53.jpg') center center no-repeat;
+	background-size: cover;
+	min-height: 200px;
+	border-radius: 12px;
+	margin: 10px 0;
+}
+
+/* Dynasty Lists Section */
+.dynasty-list {
+	background: url('https://i.pinimg.com/1200x/da/81/f0/da81f03c65e31a7372f374aa99d63737.jpg') center center no-repeat;
+	background-size: cover;
+	border: 3px solid rgba(var(--gold), var(--opacity-high));
+	border-radius: 15px;
+	padding: 20px;
+	margin: 15px 0;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+/* Queen Dynasty */
+.queen-dynasty {
+	background: url('https://i.pinimg.com/1200x/54/93/9f/54939f460dcd12fa1c7069c9d7efb55b.jpg') center center no-repeat;
+	background-size: cover;
+	border: 3px solid rgba(var(--gold), var(--opacity-high));
+	border-radius: 15px;
+	padding: 20px;
+	margin: 15px 0;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+/* Pride Dynasty */
+.pride-dynasty {
+	background: url('https://i.pinimg.com/1200x/47/43/3b/47433b5856d19bc0fd0bdecb243320cb.jpg') center center no-repeat;
+	background-size: cover;
+	border: 3px solid rgba(var(--gold), var(--opacity-high));
+	border-radius: 15px;
+	padding: 20px;
+	margin: 15px 0;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+/* Achievements Section */
+.achievements {
+	background: url('https://i.pinimg.com/736x/fd/ac/3b/fdac3be26dbb437e00e71613907678b7.jpg') center center no-repeat;
+	background-size: cover;
+	border: 3px solid rgba(var(--gold), var(--opacity-high));
+	border-radius: 15px;
+	padding: 20px;
+	margin: 15px 0;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+/* Showcase Section */
+.showcase {
+	background: url('https://i.pinimg.com/736x/f3/d8/5e/f3d85e59ba0eb6e58024cb98d26f3b25.jpg') center center no-repeat;
+	background-size: cover;
+	border: 3px solid rgba(var(--gold), var(--opacity-high));
+	border-radius: 15px;
+	padding: 20px;
+	margin: 15px 0;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+/* Beetle Book Section */
+.beetle-book {
+	background: url('https://i.pinimg.com/1200x/03/37/04/0337048534044c24ce61fcd7d00aad92.jpg') center center no-repeat;
+	background-size: cover;
+	border: 3px solid rgba(var(--gold), var(--opacity-high));
+	border-radius: 15px;
+	padding: 20px;
+	margin: 15px 0;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+/* IMAGE HEADERS */
+/* For Achievements, Bookmarks, etc */
+.image-header {
+	background: url('https://i.pinimg.com/1200x/8b/72/0c/8b720ce09a7b2f41dfb60e5195d4fad2.jpg') center center no-repeat;
+	background-size: cover;
+	padding: 20px;
+	border-radius: 15px 15px 0 0;
+	border-bottom: 2px solid rgba(var(--gold), var(--opacity-high));
+	text-align: center;
+	font-family: var(--decorative-font);
+	font-size: 28px;
+	color: rgba(var(--gold));
+	text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.9);
+}
+
+/* BASIC BOXES */
+/* Gothic Pixel style boxes with rounded corners */
+.basic-box {
+	background: rgba(var(--firebrick), 0.4);
+	border: 3px solid rgba(var(--gold), var(--opacity-high));
+	border-radius: 15px;
+	padding: 20px;
+	margin: 15px 0;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5),
+	            inset 0 0 20px rgba(var(--gold), 0.1);
+	color: rgba(var(--whitesmoke));
+}
+
+.basic-box h3 {
+	color: rgba(var(--gold));
+	font-family: var(--header-font);
+	text-transform: uppercase;
+	border-bottom: 2px solid rgba(var(--gold), 0.5);
+	padding-bottom: 10px;
+	margin-bottom: 15px;
+}
+
+/* FANCY COMMENT BOX */
+.comment-box {
+	background: url('https://i.pinimg.com/736x/9b/90/9a/9b909a53ce99e7af1a64e56f2d610b47.jpg') center center no-repeat;
+	background-size: cover;
+	border: 3px solid rgba(var(--gold), var(--opacity-high));
+	border-radius: 15px;
+	padding: 25px;
+	margin: 20px 0;
+	box-shadow: 0 6px 16px rgba(0, 0, 0, 0.6),
+	            inset 0 0 30px rgba(0, 0, 0, 0.5);
+}
+
+.comment-box::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(var(--firebrick), 0.3);
+	border-radius: 12px;
+	z-index: -1;
+}
+
+.comment-box textarea {
+	background: rgba(var(--darkgold), 0.4);
+	border: 2px solid rgba(var(--gold), 0.6);
+	border-radius: 10px;
+	color: rgba(var(--whitesmoke));
+	padding: 12px;
+	width: 100%;
+	min-height: 150px;
+	font-family: var(--main-font);
+}
+
+/* ALATUS BOX */
+.alatus-box {
+	background: url('https://i.pinimg.com/1200x/cd/02/3f/cd023fa951b98e75800f9304933756b2.jpg') center center no-repeat;
+	background-size: cover;
+	border: 3px solid rgba(var(--gold), var(--opacity-high));
+	border-radius: 15px;
+	padding: 30px;
+	margin: 20px 0;
+	box-shadow: 0 6px 16px rgba(0, 0, 0, 0.6),
+	            inset 0 0 30px rgba(0, 0, 0, 0.4);
+	position: relative;
+}
+
+.alatus-box::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(var(--firebrick), 0.4);
+	border-radius: 12px;
+	z-index: 0;
+}
+
+.alatus-box > * {
+	position: relative;
+	z-index: 1;
+}
+
+.alatus-box h2 {
+	font-family: var(--decorative-font);
+	color: rgba(var(--gold));
+	text-align: center;
+	font-size: 42px;
+	text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.9),
+	             0 0 20px rgba(var(--gold), 0.6);
+}
+
+/* LIONESS CAVE BACKGROUND */
+/* Applies to specific cave sections */
+.cave-container, .lioness-cave {
+	background: linear-gradient(rgba(var(--firebrick), 0.5), rgba(var(--darkgold), 0.3)),
+	            url('https://i.ibb.co/DDNkp0c0/tumblr-cadb016ab0f74ce7e9da3480925651f0-62e90ed3-400.gif') center center no-repeat;
+	background-size: cover;
+	border: 3px solid rgba(var(--gold), var(--opacity-high));
+	border-radius: 15px;
+	padding: 20px;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+/* MOUND IMAGES */
+.mound-section {
+	background: rgba(var(--firebrick), 0.4);
+	border: 3px solid rgba(var(--gold), var(--opacity-high));
+	border-radius: 15px;
+	padding: 20px;
+	margin: 15px 0;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+/* GOTHIC PIXEL EFFECTS */
+/* Pixelated borders for gothic pixel aesthetic */
+.pixel-border {
+	border: 3px solid rgba(var(--gold), var(--opacity-high));
+	border-radius: 15px;
+	box-shadow: 0 0 0 1px rgba(var(--firebrick), 0.5),
+	            0 0 0 2px rgba(var(--gold), 0.3),
+	            0 4px 12px rgba(0, 0, 0, 0.6);
+	image-rendering: pixelated;
+	image-rendering: -moz-crisp-edges;
+	image-rendering: crisp-edges;
+}
+
+/* Glowing effect for special elements */
+.glow-gold {
+	box-shadow: 0 0 10px rgba(var(--gold), 0.6),
+	            0 0 20px rgba(var(--gold), 0.4),
+	            0 0 30px rgba(var(--gold), 0.2);
+}
+
+/* Roman decorative elements */
+.roman-divider {
+	height: 3px;
+	background: linear-gradient(90deg, 
+		transparent, 
+		rgba(var(--gold), var(--opacity-high)) 20%, 
+		rgba(var(--gold), var(--opacity-high)) 80%, 
+		transparent);
+	margin: 20px 0;
+	border-radius: 2px;
+}
+
+/* RESPONSIVE ADJUSTMENTS */
+@media (max-width: 768px) {
+	h1 {
+		font-size: 48px;
+	}
+	
+	h2 {
+		font-size: 28px;
+	}
+	
+	.alatus-box h2 {
+		font-size: 32px;
+	}
+}
+
+/* SPECIAL ANIMATIONS */
+@keyframes goldenGlow {
+	0%, 100% {
+		box-shadow: 0 0 10px rgba(var(--gold), 0.4);
+	}
+	50% {
+		box-shadow: 0 0 20px rgba(var(--gold), 0.8);
+	}
+}
+
+.animated-glow {
+	animation: goldenGlow 3s ease-in-out infinite;
+}
+
+/* END OF CSS */
