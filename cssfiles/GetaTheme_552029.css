@@ -661,6 +661,97 @@ img[src*="logo"] {
 	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
 }
 
+/* LIODEN CAVE/DEN PAGE STYLING */
+/* Styles for the actual cave page where lions are displayed */
+
+/* Cave Description Box */
+.caveDescription, .cave-description, #caveDescription, .caveContainer {
+	background: rgba(var(--firebrick), var(--opacity-med)) !important;
+	border: 3px solid rgba(var(--gold), var(--opacity-high)) !important;
+	border-radius: 15px !important;
+	box-shadow: 0 0 15px rgba(var(--gold), 0.6) !important;
+	color: rgb(var(--whitesmoke)) !important;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8) !important;
+	padding: 20px !important;
+	margin: 15px 0 !important;
+}
+
+/* Individual Lion Slot Boxes */
+.lion, .lionBox, .cave-grid div, .cave-grid .lionName {
+	background: rgba(var(--darkgold), 0.4) !important;
+	border: 2px solid rgba(var(--gold), var(--opacity-high)) !important;
+	border-radius: 12px !important;
+	box-shadow: 0 0 10px rgba(var(--gold), 0.5) !important;
+	color: rgb(var(--whitesmoke)) !important;
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.9) !important;
+	padding: 8px !important;
+	transition: all 0.3s ease !important;
+}
+
+.lion:hover, .lionBox:hover, .cave-grid div:hover {
+	background: rgba(var(--darkgold), 0.6) !important;
+	box-shadow: 0 0 15px rgba(var(--gold), 0.8) !important;
+	transform: translateY(-2px) !important;
+}
+
+/* Featured Lion Section */
+.featured-lion {
+	background: linear-gradient(rgba(var(--firebrick), 0.6), rgba(var(--darkgold), 0.4)),
+	            url('https://i.pinimg.com/736x/1b/bb/a4/1bbba484d906a2bfda0089a054420ca7.jpg') center center no-repeat;
+	background-size: cover;
+	border: 3px solid rgba(var(--gold), var(--opacity-high));
+	border-radius: 15px;
+	box-shadow: 0 0 20px rgba(var(--gold), 0.6);
+	padding: 25px;
+	text-align: center;
+	margin: 20px auto;
+	max-width: 700px;
+}
+
+.featured-lion h2, .featured-lion h3 {
+	color: rgb(var(--gold));
+	text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.9);
+}
+
+/* Cave Grid Layout */
+.cave-grid, .mound-grid {
+	background: rgba(var(--firebrick), 0.3);
+	border: 2px solid rgba(var(--gold), 0.5);
+	border-radius: 15px;
+	padding: 15px;
+	margin: 10px 0;
+}
+
+/* Cave Thumbnail Images */
+.cave-grid img, .mound-grid img {
+	border: 2px solid rgba(var(--gold), var(--opacity-high));
+	border-radius: 10px;
+	box-shadow: 0 0 8px rgba(var(--gold), 0.5);
+	transition: all 0.3s ease;
+}
+
+.cave-grid img:hover, .mound-grid img:hover {
+	box-shadow: 0 0 15px rgba(var(--gold), 0.9);
+	transform: scale(1.05);
+}
+
+/* Cave Navigation Arrows */
+.cave-arrows, .cave-nav {
+	background: rgba(var(--darkgold), 0.5);
+	border: 2px solid rgba(var(--gold), 0.6);
+	border-radius: 10px;
+	padding: 10px;
+}
+
+/* Lion Stats Display */
+.lion-stats, .stats {
+	background: rgba(var(--firebrick), 0.4);
+	border: 1px solid rgba(var(--gold), 0.4);
+	border-radius: 8px;
+	padding: 5px;
+	margin: 5px 0;
+}
+
 /* MOUND IMAGES */
 .mound-section {
 	background: rgba(var(--firebrick), 0.4);

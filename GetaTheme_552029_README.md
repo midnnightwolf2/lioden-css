@@ -57,6 +57,12 @@
 
 ### ✅ Add-Ons
 - [x] **Lioness Cave Background** - Animated GIF background for cave sections
+- [x] **Lioden Cave/Den Page Styling** - Complete styling for cave pages where lions are displayed
+- [x] **Cave Description Box** - Styled cave description containers
+- [x] **Lion Slot Boxes** - Individual lion display boxes with hover effects
+- [x] **Featured Lion Section** - Special styling for featured lions
+- [x] **Cave Grid Layout** - Organized grid for lion displays
+- [x] **Cave Navigation** - Styled navigation arrows and controls
 - [x] **Image Headers** - For sections like achievements, bookmarks
 - [x] **Basic Boxes** - Reusable content containers
 - [x] **Fancy Comment Box** - Stylized guestbook/comment area
@@ -66,6 +72,16 @@
 ---
 
 ## 🎨 CSS Classes Reference
+
+### Cave Page Elements
+**Automatically styled when used on Lioden cave pages:**
+- `.caveDescription`, `.cave-description`, `#caveDescription`, `.caveContainer` - Cave description boxes
+- `.lion`, `.lionBox` - Individual lion display boxes
+- `.cave-grid div`, `.cave-grid .lionName` - Lion grid elements and names
+- `.featured-lion` - Featured lion section with custom background
+- `.cave-grid img`, `.mound-grid img` - Lion thumbnail images with hover effects
+- `.cave-arrows`, `.cave-nav` - Navigation elements
+- `.lion-stats`, `.stats` - Lion statistics display
 
 ### Content Boxes
 ```html
